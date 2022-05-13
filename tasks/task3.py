@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8
 
-from tkinter import *
+from tkinter import Tk, Frame, Entry, Button, Text, LEFT, RIGHT
 
 """
 напишите программу по описанию. Размеры многострочного текстового поля определяются значениями, 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     ent1 = Entry(f, width=3)
     ent2 = Entry(f, width=3)
     bt1 = Button(f, text='Изменить')
-    txt1 = Text(width=25, height=25, bg='lightgrey')
+    txt1 = Text(width=10, height=10, bg='lightgrey')
 
     bt1.bind('<Button-1>', button_click)
     ent1.bind('<Return>', button_click)
